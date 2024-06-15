@@ -96,7 +96,7 @@ You have to implement the function `processOrders` to process the orders list an
 
 ### Important
 
-Make sure you copy the .github folder from this repo to your repo. This folder is required to run the code on github actions. You can verify if the code is running on the github actions tab.
+Make sure you copy the .github folder from this repo to your repo. This folder is required to run the code on github actions. You can verify if the code is running on the github actions tab. The code should start from main.js file else github actions will fail.
 
 Not following this step will result in a 30% penalty.
 

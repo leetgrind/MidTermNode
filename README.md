@@ -94,6 +94,8 @@ The `printGeneratedOrders` method prints details of the generated orders. The fi
 
 You have to implement the function `processOrders` to process the orders list and print the output as shown in the example above. The orders should be processed in an ansynchronous manner. Assume that we have unlimited cooks avaialble for preparing the items.
 
+For simplicity you can use index of the 2D array of orders as order number. However, you can generate an order number as well if you want.
+
 ### Important
 
 Make sure you copy the .github folder from this repo to your repo. This folder is required to run the code on github actions. You can verify if the code is running on the github actions tab. The code should start from main.js file else github actions will fail.

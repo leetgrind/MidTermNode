@@ -37,6 +37,7 @@ You are given a list of orders. You have to process the orders in an efficient m
 An example order list looks like:
 
 ```
+// 2D array representing Orders
 [
     [burger, sandwich, fries, soda], // Index 0, Order 0
     [burger, fries, sandwich], // Index 1, Order 1

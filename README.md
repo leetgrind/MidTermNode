@@ -38,15 +38,16 @@ An example order list looks like:
 
 ```
 [
-    [burger, sandwich, fries, soda],
-    [burger, fries, sandwich],
-    [soda, burger]
+    [burger, sandwich, fries, soda], // Index 0, Order 0
+    [burger, fries, sandwich], // Index 1, Order 1
+    [soda, burger] // Index 2, Order 2
 ]
 ```
 
 The expected output should be:
 
 ```
+// generated with the printGeneratedOrders method. 
 Order with ID: 0 generated. Items: 
 🍔 - Burger
 🥪 - Sandwich
@@ -60,8 +61,7 @@ Order with ID: 2 generated. Items:
 🥤 - Soda
 🍔 - Burger
 
-
-Order 0 : 🥤 prepared 
+Order 0 : 🥤 prepared // Order number 0 Soda is ready
 Order 2 : 🥤 prepared 
 Order 0 : 🍟 prepared 
 Order 1 : 🍟 prepared 
@@ -69,7 +69,7 @@ Order 0 : 🍔 prepared
 Order 1 : 🍔 prepared 
 Order 2 : 🍔 prepared 
 
-🚀 Order 2 ready to pickup 🚀
+🚀 Order 2 ready to pickup 🚀 // All the items in Order number 2 are ready so the order is ready
 
 Order 0 : 🥪 prepared 
 

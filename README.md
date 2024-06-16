@@ -103,4 +103,10 @@ Make sure you copy the .github folder from this repo to your repo. This folder i
 
 Not following this step will result in a 30% penalty.
 
+## Submission Instructions
+- Create a private repo. Add my username `leetgrind` to the repo.
+- Submit the repo as part of your submission.
+- To save time you can submit your repo link at the start of the test.
+- Make sure to push changes before the deadline. Any commits after the deadline won't be considered.
+
 

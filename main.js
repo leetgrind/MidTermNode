@@ -48,6 +48,26 @@ function generateOrders(allItems, numberOfOrders) {
     return orders;
 }
 
+function prepareItem(item, orderNumber) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(`Order ${orderNumber} : ${item.symbol} prepared `);
+            resolve();
+        }, item.timeToPrepare)
+    } )
+}
+
+function serverOrder(orderNumber) {
+    console.log(`\n🚀 Order ${orderNumber} ready to pickup 🚀\n`);
+}
+async function submitOrder(orderList, orderNumber) {
+
+    var promises = orderList.map(order => prepareItem(order, orderNumber));
+    
+    await Promise.all(promises);
+    serverOrder(orderNumber);
+}
+
 function printGeneratedOrders(orderList) {
     orderList.map((order, index) => {
         console.log(`Order with ID: ${index} generated. Items: `);
@@ -55,7 +75,6 @@ function printGeneratedOrders(orderList) {
     });
 }
 
-// implement this method
 function processOrders(ordersList) {
     orderList.map((order, idx) => console.log(`Order Id: ${idx} processed`))
 }

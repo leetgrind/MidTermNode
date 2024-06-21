@@ -76,7 +76,7 @@ function printGeneratedOrders(orderList) {
 }
 
 function processOrders(ordersList) {
-    orderList.map((order, idx) => console.log(`Order Id: ${idx} processed`))
+    orderList.map((order, idx) => submitOrder(order, idx))
 }
 
 orderList = generateOrders(allItems, 3);
